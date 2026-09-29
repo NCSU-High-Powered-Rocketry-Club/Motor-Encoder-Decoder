@@ -1026,7 +1026,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1051,7 +1051,7 @@
 					)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1083,7 +1083,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1105,7 +1105,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1143,7 +1143,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1908,7 +1908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 91.1352 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -1955,6 +1955,88 @@
 				)
 				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 90.17 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b306790-b738-4da3-acc3-6dd85f1ea004")
+		(property "Reference" "#PWR019"
+			(at 90.17 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 90.17 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 90.17 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7dca0576-804c-4651-939b-2b26cdbf6b07")
+		)
+		(instances
+			(project "motor_controller_encoder_counter"
+				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/53493d7b-f3be-46b0-96b1-0c0b88e33ee4"
+					(reference "#PWR019")
+					(unit 1)
+				)
+				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -2130,7 +2212,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -2212,7 +2294,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -2239,7 +2321,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 132.08 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -2322,7 +2404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 135.89 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -2375,12 +2457,94 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 143.51 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ba79545-dae3-4d93-90f4-1454c7e35f1a")
+		(property "Reference" "#PWR017"
+			(at 143.51 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 143.51 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8f64743-1fec-4d88-954d-3032d40cde6e")
+		)
+		(instances
+			(project "motor_controller_encoder_counter"
+				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/53493d7b-f3be-46b0-96b1-0c0b88e33ee4"
+					(reference "#PWR017")
+					(unit 1)
+				)
+				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 114.3 53.34 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -2588,7 +2752,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 142.5448 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2641,8 +2805,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 143.51 41.91 0)
+		(lib_id "power:+3.3V")
+		(at 68.58 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2651,9 +2815,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d047af31-7975-48a7-aa60-2dfb0da1cd76")
-		(property "Reference" "#PWR05"
-			(at 143.51 45.72 0)
+		(uuid "c3ee5406-ea3c-48b5-a65a-c0c79cf9073b")
+		(property "Reference" "#PWR012"
+			(at 68.58 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2663,8 +2827,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 143.51 36.83 0)
+		(property "Value" "+3.3V"
+			(at 68.58 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2674,7 +2838,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 41.91 0)
+			(at 68.58 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2685,7 +2849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 41.91 0)
+			(at 68.58 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2695,8 +2859,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 143.51 41.91 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 68.58 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2707,16 +2871,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "15ff66c5-60d3-488c-bc58-e2784e04c553")
+			(uuid "11662fa7-033d-4a68-ad4b-e4f83196abc6")
 		)
 		(instances
 			(project "motor_controller_encoder_counter"
 				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/53493d7b-f3be-46b0-96b1-0c0b88e33ee4"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
-					(reference "#PWR017")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -2799,170 +2963,6 @@
 				)
 				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 68.58 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db7293f0-cd9c-4b01-a2fb-18eb5626d185")
-		(property "Reference" "#PWR012"
-			(at 68.58 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 68.58 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41cea206-78ad-4559-bae7-a8132d6cb809")
-		)
-		(instances
-			(project "motor_controller_encoder_counter"
-				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/53493d7b-f3be-46b0-96b1-0c0b88e33ee4"
-					(reference "#PWR012")
-					(unit 1)
-				)
-				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 90.17 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1c5c56f-74d7-413a-bc57-64c0e847f589")
-		(property "Reference" "#PWR06"
-			(at 90.17 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 90.17 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8e163e72-f2c0-48aa-84f4-0c0f309a04cc")
-		)
-		(instances
-			(project "motor_controller_encoder_counter"
-				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/53493d7b-f3be-46b0-96b1-0c0b88e33ee4"
-					(reference "#PWR06")
-					(unit 1)
-				)
-				(path "/62b0e8b6-da8a-447f-a4b0-2f68edd96838/f3411812-b24b-44e6-92bd-eb6d5ab0969a"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
